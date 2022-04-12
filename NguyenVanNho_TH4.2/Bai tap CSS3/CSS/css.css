@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+.container{max-width: 1280px;
+	height: auto;
+	margin: 0 auto}
+header{width: 100%;
+	max-height: 230px;
+	min-height: 100px;}
+header>img{width: 100%;
+	height: 100%;}
+nav{width: 100%; height: 30px;
+	background-color: #F90;
+	margin-bottom: 5px;}
+nav a{ color: #FFF;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	float: left;
+	line-height: 30px;}
+nav a:hover{ color: #F36;
+	background-color: #FFC;}
+article{width: 70%;
+	min-height: 620px;
+	background-color: #696;
+	color: #FFF;
+	float: left;
+	margin-bottom: 5px;}
+aside{width: 29%;
+	min-height: 620px;
+	float: right;background-color: #066;color: #FFF; margin-bottom: 5px;}
+footer{width: 100%;
+	height: 230px;
+	background-color: #366;
+	color: #FFF;
+	clear: both; }
+.sp{
+	width: 31%;  height: 45%;
+	float: left; margin: 5px;
+	padding: 5px;
+	background-color: #FFF;
+	border-radius: 4px;
+}
+.sp>img{
+	width: 80%;| height: 80%;
+	margin: 2px auto;
+}
+.sp p{
+	color: #00f;
+	text-align: center;
+	margin: 0px;
+	font-size: 20px;
+	width: 100%;
+}
+.sp p del{
+	color: #666;
+}
+aside h2{color: #fff;
+	background-color: #060;
+	height: 40px;
+	margin: 0px;
+	text-align: center;
+	line-height: 40px;}
+aside table td {text-align: justify;}
+
+footer .footer_left{width: 40%; height: 200px; float: left;}
+footer .footer_right{width: 20%; height: 100px; float: right; margin-top: 40px;}
+ul {list-style-type: square;padding-top: 20px;}
+ul li {font-size: 18px;}
+footer p {text-align: center; font-style: italic; clear: both;}
+
+
+

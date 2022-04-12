@@ -1,0 +1,275 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#conten{
+    background-color: black;
+    width: auto;
+    height: 35px;
+}
+#conten>a{
+    float: left;
+    color: white;
+    margin-top: 8px;
+}
+ 
+ 
+#con1{
+    float: right;
+    margin-top: 8px;
+}
+#con1>img{
+    width: 20px;
+    height: 20px; 
+}
+#con1>a{
+    float: right;
+    color: white;
+}
+#cont>img{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin: 5px;
+}
+header{
+    width: 1000px;
+    height: 90px; 
+    margin-left: 200px;
+}
+header>div{
+    display: inline;
+}
+div>img{
+    width: 140px;
+    height: 100px;
+}
+#search{
+    float: right;
+    margin-top: 33px;
+}
+
+#search>input{
+    width: 300px;
+    border-radius: 21px;
+    margin-right: 100px;
+    height: 30px;
+}
+/* .icon_search>img{
+    width: 20px;
+} */
+#chucnang{
+    float: right;
+    margin-top: 35px;
+}
+#chucnang>ul{
+    display: inline;
+}
+#chucnang>ul>li{
+    float: left;
+    list-style: none;
+}
+#chucnang>ul>li>a{
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 7px;  
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Menu */
+#menu{
+    width: 1000px;
+    display: table-row; 
+}
+#menu>ul{
+    /* display: inline; */
+    margin-left: 240px;
+}
+#menu>ul>li{
+    float: left;
+    list-style: none;
+    margin-top: 5px; 
+}
+#menu>ul>li>a{
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 14px; 
+    font-weight: bold;
+    color: gray;
+    font-size: 18px;
+}
+#menu>ul>li>a:hover{
+    color: black;
+}
+/* baner */
+.baner{ 
+    margin-top: 50px;
+}
+.img_baner{
+    width: 100%; 
+    height: 100%;
+
+}
+/* danh muc */
+.danhmucsp{
+    width: 100%;
+    height: 100px;
+}
+.danhmucsp>ul{ 
+    float: left; 
+    margin-left: 300px;
+}
+.danhmucsp>ul>li{
+    list-style: none;
+    float: left;
+    padding: 11px 28px; 
+    border-radius: 30px;
+    margin: 5px;
+    background-color: rgb(250, 243, 243); 
+} 
+#Sneaker{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+#nike{
+    color: silver;
+    font-size: 18px;
+}
+#Adidas{
+    color: rgb(0, 255, 13);
+    font-size: 18px;
+}
+#2hand{
+    color: silver;
+    font-size: 18px;
+}
+#readme{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.danhmucsp>ul>li>a{
+    text-decoration: none;
+}
+.danhmucsp>ul>li:hover{
+  border: 3px solid rgb(156, 156, 247);
+}
+
+/* product */
+.new{
+    /* height: 73%; */
+    width: 1000px;
+    margin-left: 200px;
+    margin-top: 25px;
+    margin-bottom: 3px;
+    /* float: right; */
+}
+
+.noibat{
+    display: table-row;
+}
+
+.left{
+    display: table-cell;
+    float: left;
+}
+.btnmua{
+    border-radius: 10px;
+    width: 145px;
+    height: 31px;
+    font-weight: bold;
+    background-color: white;
+} 
+ 
+.main{
+    height: 33%; 
+    text-align: center;
+    float: left;
+    margin-bottom: 30px;
+}
+.hinh{
+    height: 245px;
+    width: 210px;
+}
+.hinh:hover{
+    transform: scale(1.1);
+}
+.name{
+    color: black;
+    size: 20px;
+    font-weight: bold;
+}
+.gia{
+    color: black;
+    size: 20px;
+    font-weight: bold;
+}
+.right{
+    display: table-cell;
+    float: right;
+}
+/* foter */
+.footerr{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+#footer_main{
+    display: table-row;
+    display: inline;
+    margin-left: 200px;
+}
+#ft1{
+    display: table-cell;
+}
+#ft1>ul>li>a{
+    color: white; 
+    
+}
+#ft2{
+    display: table-cell; 
+}
+#ft2>ul>li>a{
+    color: white;
+}
+#ft3{
+    display: table-cell;
+}
+#ft3>ul>li>a{
+    color: white;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+footer>a{
+    color: white;
+    text-align: center;
+}
+li a>img {
+  display: block;
+  max-width:150px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+}
+div img {
+	background-image: 350px;
+}
+#showcart{
+	position:fixed;
+	border-radius: 10px;
+	right: 20px;
+	top: 73px;
+	padding: 10px;
+	background-color: #EEE;
+	border: 1px #CCC solid;
+	
+}	
+
+   

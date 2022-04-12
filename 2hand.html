@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trang Chủ</title>
+	<link rel="shortcut icon" href="Img/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/nike.css">
+</head>
+<body>
+	<body>
+        <div id="conten">
+            <a>Giày Sale</a>
+           
+            <div id="cont">
+               <img src="Img/canhan.png">
+               
+                 
+				
+               
+            </div>
+            <div id="con1">
+                <img  src="Img/phone.jpg"><a>0849343889</a>
+            </div>
+        </div>
+		<header>
+            <div>
+                
+               <li><a href="All giày.html"><img src="Img/logo.png"></a></li>
+            </div>
+			 <div id="chucnang">
+                 <ul>
+              
+                   <div class="cart"> 
+                       <a onclick="showcart()"><img src="Img/gio.png"> Giỏ hàng</a><span>(0)</span>
+					   
+                    </div>
+					<div id="showcart">
+						 <table>
+							 <tr>
+								 <th>STT</th>
+								 <th>Hình</th>
+								 <th>Tên sản phẩm</th>
+								 <th>Đơn giá</th>
+								 <th>Số lượng</th>
+								 <th>Thành tiền</th>
+							 </tr>
+							 <tr>
+								 <td>1</td>
+								 <td><img src="Img/1.webp" width="50"></td>
+								 <td>Giày</td>
+								 <td>10</td>
+								 <td>1</td>
+								 <td>
+									 <div>10</div>
+								 </td>
+							 </tr>
+							 <tr>
+								 <th colspan="5">Tổng đơn hàng</th>
+								 <th>
+									 <div>10</div>
+								 </th>
+							 </tr>
+							 <tbody id="mycart">
+								 
+							 </tbody>
+						</table>
+						 </div>
+					<script language="javascript">
+						
+						document.getElementById("showcart").style.display="none"
+						var giohang = new Array	();
+						function themvaogiohang(x) {
+							var boxsp = x.parentElement.children;
+							var hinh = boxsp[0].children[0].src;
+							var gia = boxsp[1].children[0].innerText;
+							var tensp = boxsp[2].innerText;
+							var soluong  = boxsp[3].value;
+							var sp = new Array(hinh, gia, tensp, soluong);
+							giohang.push(sp);
+							console.log(giohang);
+							showcountsp();
+						}
+						
+						
+						function showcountsp(){
+							document.getElementById("countsp").innerHTML = giohang.length
+						}
+						function showcart(){
+							var t = document.getElementById("showcart");
+							if(t.style.display == "block")
+								{
+									t.style.display = "none";
+								}
+							else
+							{
+						            t.style.display = "block";
+								
+							}
+							
+						}
+						
+						function themvaogiohang(x)
+						{
+							var boxsp = x.parentElement.children;
+							
+						}
+						function showmycart(){
+							var ttgh= "";
+							var tong =0;
+							for(let i=0;i<giohang.length;i++)
+								{
+									var tt = parseInt(giohang[i][1]) * parseInt(giohang[i][3]);
+									tong += tt;
+									ttgh += '<tr>' + 
+								'<td>' + (i+1) +'</td>' +
+								 '<td> <img src="' + giohang[i][0]+ '" width="50"></td>'
+								 '<td>'+ giohang[i][1]+'</td>'+
+								 '<td>'+ giohang[i][2]+'</td>'+
+								 '<td>'+ giohang[i][3]+'</td>'+
+								 '<td>'+
+									 '<div>' + tt +  '</div>'+
+								 '</td>'+
+							 '</tr>'
+								}
+							ttgh +='<tr>' +
+								'<th colspan="5"> Tổng đơn hàng</th>' +
+								'<th>'+
+									 '<div>'+ tong +'</div>'
+								 '</th>'+
+							 '</tr>';
+							document.getElementById("mycart").innerHTML = ttgh; 
+						}
+					</script>
+                    <li><a href="dangky.html">Đăng ký</a></li> 
+                    <li><a href="dangnhap.html">Đăng nhập</a></li>
+                </ul>
+            </div>
+			<div id="search">
+                
+                
+            </div>
+        </header>
+		<div id="menu">
+			 <ul>
+                <li><a href="trangchu.html">Trang Chủ</a></li>
+                <li><a href="giay.html">Giày Sneaker</a></li>
+                <li><a href="nike.html">Giày Nike</a></li>
+                <li><a href="giayadidas.html">giày Adisas</a></li>
+                <li><a href="giaycu.html">Giày 2hand</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+		</div>
+		<div class="baner">
+            <img class="img_baner" src="Img/slider-2.png">
+           
+            <img class="img_baner" src="Img/banner3.jpg">
+            <img class="img_baner" src="Img/banner4.png">
+			<img class="img_baner" src="Img/banner5.png">
+			<img class="img_baner" src="Img/banner6.png">
+			<img class="img_baner" src="Img/banner8.png">
+			<img class="img_baner" src="Img/banner7.png">
+        </div>
+		 <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("img_baner");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000);    
+            }
+			 </script>
+		<div class="danhmucsp">
+                <ul>
+                    <li><a id="sneaker" href="Sneaker.html"><img src="Img/nerrrr.jpg">Giày Sneaker</a></li>
+                    <li><a id="Nike" href="Nike.html"><img src="Img/y-nghia-logo-nike.png">Giày Nike</a></li>
+                    <li><a id="Adidas" href="Adidas.html"><img src="Img/logo-adidas.jpg">Giày Adidas</a></li>
+                    <li><a id="2hand" href="2hand.html"><img src="Img/2 hand.jfif">2hand</a></li>
+                </ul>
+            </div>
+	
+          
+            
+        <section class="new">
+            
+            <div class="noibat">
+                
+                <aside class="left">
+                    <div class="main">
+                        <img class="hinh" src="Img/70.webp">
+                        <p class="name">Giày TRAINING REEBOK NANO (cũ)</p>
+                        <p class="gia">400.000₫ </p>
+                        <button class="btnmua">Thêm vào giỏ hàng</button>
+                        
+                    </div>
+                    <div class="main">
+                        <img class="hinh" src="Img/72.webp">
+                        <p class="name">[2hand] Giày Thể Thao NIKE AIR HEIGHTS GIÀY CŨ CHÍNH HÃNG</p>
+                        <p class="gia">990.000₫ </p>
+                        <button class="btnmua">Thêm vào giỏ hàng</button>
+                        
+                    </div>
+               </aside>
+               <aside class="right">
+                <div class="main">
+                    <img class="hinh" src="Img/giay2.png">
+                    <p class="name">Nike Waffle One Crater</p>
+                    <p class="gia">990.000₫ </p>
+                    <button class="btnmua">Thêm vào giỏ hàng</button>
+                    
+                </div>
+                <div class="main">
+                    <img class="hinh" src="Img/giay30.webp">
+                    <p class="name">Nike Waffle One </p>
+                    <p class="gia">2.590.000₫ </p>
+                    <button class="btnmua">Thêm vào giỏ hàng</button>
+                    
+                </div>
+               </aside>
+            </div>
+        </section>
+        <!-- moi --> 
+            <section class="new">
+            
+                <div class="noibat">
+                    
+                    <aside class="left">
+                        <div class="main">
+                            <img class="hinh" src="Img/giay 29.webp">
+                            <p class="name">Nike Air Force 1 '07 </p>
+                            <p class="gia">990.000₫ </p>
+                            <button class="btnmua">Thêm vào giỏ hàng</button>
+                            
+                        </div>
+                        <div class="main">
+                            <img class="hinh" src="Img/giau35.webp">
+                            <p class="name">Nike Air Force 1 '07 Essential </p>
+                            <p class="gia">3.990.000₫ </p>
+                            <button class="btnmua">Thêm vào giỏ hàng</button>
+                            
+                        </div>
+                        <div class="main">
+                            <img class="hinh" src="Img/giay36.webp">
+                            <p class="name">Nike Blazer Low Platform </p>
+                            <p class="gia">1.990.000₫ </p>
+                            <button class="btnmua">Thêm vào giỏ hàng</button>
+                            
+                        </div>
+                        <div class="main">
+                            <img class="hinh" src="Img/giay28.webp">
+                            <p class="name">Nike Blazer Low Platform Next Nature </p>
+                            <p class="gia">690.000₫ </p>
+                            <button class="btnmua">Thêm vào giỏ hàng</button>
+                            
+                        </div>
+                   </aside>
+                   <aside class="right">
+                    <div class="main">
+                        <img class="hinh" src="Img/giay24.webp">
+                        <p class="name">Nike Air Max PlusG</p>
+                        <p class="gia">2.990.000₫ </p>
+                        <button class="btnmua">Thêm vào giỏ hàng</button>
+                        
+                    </div>
+					   
+					   
+                    <div class="main">
+                        <img class="hinh" src="Img/giay27.webp">
+                        <p class="name">Nike Ari</p>
+                        <p class="gia">3.990.000₫</p>
+                        <button class="btnmua">Thêm vào giỏ hàng</button>
+                        
+                    </div>
+                    <div class="main">
+                        <img class="hinh" src="Img/giay30.webp">
+                        <p class="name">Nike Four</p>
+                        <p class="gia">1.990.000₫ </p>
+                        <button class="btnmua">Thêm vào giỏ hàng</button>
+                        
+                    </div>
+                    <div class="main">
+                        <img class="hinh" src="Img/giay25.webp">
+                        <p class="name">Nike fot </p>
+                        <p class="gia">6.990.000₫ </p>
+                        <button class="btnmua">Thêm vào giỏ hàng</button>
+                        
+                    </div>
+                   </aside>
+                </div>
+                <script src="jv/nikee.js"></script>
+            </section>
+    </body>
+<div class="footerr" >
+        <div id="footer_main">
+            <div id="ft1">
+                <ul>
+                    <li><a><strong>CÂU HỎI THƯỜNG GẶP</strong></a></li>
+                   <li><a>Hướng dẫn cách tra cứu mã đơn hàng mua trên Giày xinh</a></li>
+                    <li><a>Sản phẩm cần đổi hết hàng?</a></li>
+                    <li><a>Nếu không có hóa đơn mua hàng tôi có thể trả lại sản phẩm không</a></li>
+                    <li><a>Tôi có thể trả lại sản phẩm vì không ưng ý?</a></li>
+					<li><a>Sản phẩm nhận được không giống với hình ảnh trên website?</a></li>
+                    
+                   
+                </ul> 
+            </div>
+            <div id="ft2">
+                <ul>
+                    <li><a><strong>DỊCH VỤ KHÁCH HÀNG</strong></a></li>
+                    <li><a><strong>Tên Doanh Nghiệp:</strong>Công Ty Cổ Phần Thương Mại Giày xinh</a></li>
+                    <li><a><strong>Hotline:</strong>0849343889</a></li>
+                     <li><a><strong>Tổng Đài:</strong>1900 333333</a></li>
+                     <li><a><strong>Email:</strong>2124802010247@student.tdmu.edu.vn</a></li>
+                    
+                </ul> 
+            </div>
+            <div id="ft3"> 
+                <ul>
+                   
+                    <li><a><strong>CHĂM SÓC KHÁCH HÀNG</strong></a></li>
+                   <li><a>Chính sách bán hàng</a></li>
+                    <li><a>Chính sách bảo hành</a></li>
+                    <li><a>Chính sách giao hàng</a></li>
+                    <li><a>Chính sách đổi trả và hoàn tiền</a></li>
+					<li><a>Chính sách thanh toán</a></li>
+                    <li><a>Chính sách bảo mật thanh toán</a></li>
+                   
+				
+					
+                </ul> 
+            </div>
+            <div id="ft4">
+                
+            </div>
+        </div>
+    </div>
+	
+    <footer>
+        <a>© 2022 1Sneaker.vn. 1SNEAKER Chuyên thời trang đường phố REPLICA 1:1</a>
+    </footer>
+   </html>

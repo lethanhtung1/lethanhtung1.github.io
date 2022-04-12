@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#conten{
+    background-color:#D8BFD8;
+    width: auto;
+    height: 35px;
+}
+#conten>a{
+    float: left;
+    color: white;
+    margin-top: 8px;
+}
+ 
+ 
+#con1{
+    float: right;
+    margin-top: 8px;
+}
+#con1>img{
+    width: 20px;
+    height: 20px; 
+}
+#con1>a{
+    float: right;
+    color: white;
+}
+#cont>img{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin: 5px;
+}
+
+/* Menu */
+#menu{
+    width: 1000px;
+    display: table-row; 
+}
+#menu>ul{
+    /* display: inline; */
+    margin-left: 240px;
+}
+#menu>ul>li{
+    float: left;
+    list-style: none;
+    margin-top: 5px; 
+}
+#menu>ul>li>a{
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 14px; 
+    font-weight: bold;
+    color: gray;
+    font-size: 18px;
+}
+#menu>ul>li>a:hover{
+    color: black;
+}
+section{
+    display: table-row;
+}
+/* ảnh */
+#left{
+    margin-top: 25px;
+    display: table-cell;
+    margin-bottom: 25px;
+    float: left;
+}
+#namesp{
+    color: red;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 200px;
+    font-weight: bold;
+}
+#hrr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1000px;
+}
+.anhto{
+    width: 900px;
+}
+.anhto>img{
+    width: 400px;
+    margin-left: 200px;
+}
+.anhnho{
+    width: 400px;
+    height: 200px;   
+    display: inline;
+    margin-left: 150px; 
+}
+.anhnho>img{ 
+    width: 100px;
+    height: 70px; 
+    margin-top: 25px;
+}
+#right{
+    display: table-cell;
+}
+ 
+/* foter */
+.footerr{
+    width: 100%;
+    height: 150px;
+    background-color:#28B5B5;
+}
+#footer_main{
+    display: table-row;
+    display: inline;
+    margin-left: 200px;
+}
+#ft1{
+    display: table-cell;
+}
+#ft1>ul>li>a{
+    color: white; 
+    
+}
+#ft2{
+    display: table-cell; 
+}
+#ft2>ul>li>a{
+    color: white;
+}
+#ft3{
+    display: table-cell;
+}
+#ft3>ul>li>a{
+    color: white;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #28B5B5;
+}
+footer>a{
+    color: white;
+    text-align: center;
+}
+#chucnang li>a{
+	text-align: center;
+	color: blueviolet;
+	display: block;
+ 
+
+	
+}
